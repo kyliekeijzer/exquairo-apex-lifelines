@@ -4,7 +4,6 @@ __pycache__/
 .idea
 
 # Ignore data contents, but track the shared synth CSV + README
-data/*
 !data/raw/
 data/raw/*
 !data/raw/exquairo_ai_bootcamp_synth_dataset.csv
