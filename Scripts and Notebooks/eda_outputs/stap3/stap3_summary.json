@@ -1,0 +1,77 @@
+{
+  "n_rows": 17960,
+  "n_continuous_profiled": 27,
+  "n_categorical_profiled": 15,
+  "top_missing_continuous": [
+    {
+      "variable": "ALT_T1",
+      "pct_nan": 49.49
+    },
+    {
+      "variable": "UZ_T1",
+      "pct_nan": 49.49
+    },
+    {
+      "variable": "BALB_T1",
+      "pct_nan": 49.37
+    },
+    {
+      "variable": "NSES",
+      "pct_nan": 45.14
+    },
+    {
+      "variable": "SUMOFALCOHOL",
+      "pct_nan": 34.85
+    },
+    {
+      "variable": "SUMOFKCAL",
+      "pct_nan": 34.78
+    },
+    {
+      "variable": "HB1C_T1",
+      "pct_nan": 21.45
+    },
+    {
+      "variable": "LLDS",
+      "pct_nan": 11.62
+    },
+    {
+      "variable": "HBAC_T3",
+      "pct_nan": 4.67
+    },
+    {
+      "variable": "HBAC_T2",
+      "pct_nan": 3.44
+    }
+  ],
+  "cleaning_flags": [
+    {
+      "variable": "HBAC_T2",
+      "min": 0.0,
+      "max": 13.6,
+      "n_le0": 2,
+      "cleaning_note": "\u22640 unlikely for HbA1c % \u2014 treat as missing"
+    },
+    {
+      "variable": "HB1C_T1",
+      "min": 19.0,
+      "max": 155.0,
+      "n_le0": 0,
+      "cleaning_note": "extreme max vs p99 \u2014 check outliers"
+    },
+    {
+      "variable": "TGL_T1",
+      "min": 0.2,
+      "max": 12.56,
+      "n_le0": 0,
+      "cleaning_note": "extreme max vs p99 \u2014 check outliers"
+    },
+    {
+      "variable": "ALT_T1",
+      "min": 1.0,
+      "max": 451.0,
+      "n_le0": 0,
+      "cleaning_note": "extreme max vs p99 \u2014 check outliers"
+    }
+  ]
+}

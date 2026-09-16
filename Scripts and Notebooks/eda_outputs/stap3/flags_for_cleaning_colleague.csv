@@ -1,0 +1,5 @@
+variable,min,max,n_le0,cleaning_note
+HBAC_T2,0.0,13.6,2,≤0 unlikely for HbA1c % — treat as missing
+HB1C_T1,19.0,155.0,0,extreme max vs p99 — check outliers
+TGL_T1,0.2,12.56,0,extreme max vs p99 — check outliers
+ALT_T1,1.0,451.0,0,extreme max vs p99 — check outliers
