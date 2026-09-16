@@ -1,0 +1,143 @@
+{
+  "source": "data/processed/df_filtered.xlsx",
+  "shape": {
+    "n_rows": 17960,
+    "n_cols": 56
+  },
+  "memory_deep_bytes": 8046212,
+  "memory_deep_mb": 8.05,
+  "dtype_counts": {
+    "float64": 49,
+    "int64": 7
+  },
+  "n_columns_with_any_nan": 46,
+  "top10_missing_pct": [
+    {
+      "column": "TYPE2_DIABETES_FAMILY_FATHER",
+      "pct_missing": 97.36637,
+      "n_missing": 17487
+    },
+    {
+      "column": "TYPE2_DIABETES_FAMILY_MOTHER",
+      "pct_missing": 96.932071,
+      "n_missing": 17409
+    },
+    {
+      "column": "DIAG_FIBROMYALGIA_ACR",
+      "pct_missing": 15.428731,
+      "n_missing": 2771
+    },
+    {
+      "column": "DIAG_CFS_CDC",
+      "pct_missing": 14.326281,
+      "n_missing": 2573
+    },
+    {
+      "column": "DIAG_IBS_ROME3",
+      "pct_missing": 14.237194,
+      "n_missing": 2557
+    },
+    {
+      "column": "CYCLE_COMMUTE_T1",
+      "pct_missing": 13.240535,
+      "n_missing": 2378
+    },
+    {
+      "column": "LLDS",
+      "pct_missing": 11.620267,
+      "n_missing": 2087
+    },
+    {
+      "column": "WORK_T1",
+      "pct_missing": 11.152561,
+      "n_missing": 2003
+    },
+    {
+      "column": "NSES",
+      "pct_missing": 9.849666,
+      "n_missing": 1769
+    },
+    {
+      "column": "EDUCATION_LOWER_T2",
+      "pct_missing": 9.125835,
+      "n_missing": 1639
+    }
+  ],
+  "vs_raw_csv": {
+    "raw_shape": [
+      17960,
+      100
+    ],
+    "filtered_shape": [
+      17960,
+      56
+    ],
+    "same_nrows": true,
+    "n_cols_dropped": 44,
+    "n_cols_kept": 56,
+    "dropped_columns_sample": [
+      "ALT_T1",
+      "A_SUM_T1",
+      "BALB_T1",
+      "BURNOUT_T1",
+      "C_SUM_T1",
+      "DBP_T1",
+      "DBP_T2",
+      "D_SUM_T1",
+      "E_SUM_T1",
+      "GLU_T1",
+      "GLU_T2",
+      "GLU_T3",
+      "HB1C_T1",
+      "HB1C_T2",
+      "HB1C_T3",
+      "HEIGHT_T1",
+      "HEIGHT_T2",
+      "HEIGHT_T3",
+      "I_SUM_T1",
+      "LDI_SUM_T1"
+    ],
+    "n_dropped_listed": 44
+  },
+  "hbac_le_0": {
+    "HBAC_T1": {
+      "n_le_0": 0,
+      "n_eq_0": 0,
+      "n_lt_0": 0,
+      "n_nan": 124,
+      "min": 3.9,
+      "max": 16.4
+    },
+    "HBAC_T2": {
+      "n_le_0": 2,
+      "n_eq_0": 2,
+      "n_lt_0": 0,
+      "n_nan": 617,
+      "min": 0.0,
+      "max": 13.6
+    },
+    "HBAC_T3": {
+      "n_le_0": 0,
+      "n_eq_0": 0,
+      "n_lt_0": 0,
+      "n_nan": 838,
+      "min": 3.5,
+      "max": 15.0
+    }
+  },
+  "nses": {
+    "dtype": "float64",
+    "n_true_nan": 1769,
+    "pct_true_nan": 9.8497,
+    "n_multi_dot_unparseable_in_xlsx": 0,
+    "note": "In df_filtered.xlsx, NSES is already float64. True NaN count matches raw CSV blank/NaN count. No object/str multi-dot residues remain in the xlsx (resolved upstream when building the filtered file).",
+    "raw_csv_compare": {
+      "raw_true_empty_or_nan": 1769,
+      "raw_multi_dot_strings": 6338,
+      "raw_unparseable_nonempty": 6338,
+      "filtered_xlsx_true_nan": 1769,
+      "filtered_xlsx_dtype": "float64"
+    }
+  },
+  "minus8_minus9_n_cols_affected": 0
+}
