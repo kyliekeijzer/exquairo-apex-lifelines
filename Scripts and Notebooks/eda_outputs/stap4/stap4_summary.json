@@ -1,0 +1,68 @@
+{
+  "n_rows": 17960,
+  "n_cols": 100,
+  "n_cols_with_nan": 84,
+  "n_cols_with_neg8_or_neg9": 2,
+  "worst_missing_top10": [
+    {
+      "column": "TYPE2_DIABETES_FAMILY_FATHER",
+      "pct_nan": 97.37
+    },
+    {
+      "column": "TYPE2_DIABETES_FAMILY_MOTHER",
+      "pct_nan": 96.93
+    },
+    {
+      "column": "SLEEP_QUALITY",
+      "pct_nan": 52.51
+    },
+    {
+      "column": "ALT_T1",
+      "pct_nan": 49.49
+    },
+    {
+      "column": "UZ_T1",
+      "pct_nan": 49.49
+    },
+    {
+      "column": "BALB_T1",
+      "pct_nan": 49.37
+    },
+    {
+      "column": "PREGNANCIES",
+      "pct_nan": 43.85
+    },
+    {
+      "column": "SUMOFALCOHOL",
+      "pct_nan": 34.85
+    },
+    {
+      "column": "SUMOFKCAL",
+      "pct_nan": 34.78
+    },
+    {
+      "column": "HB1C_T1",
+      "pct_nan": 21.45
+    }
+  ],
+  "n_proposed_rules": 12,
+  "rule_ids": [
+    "R01",
+    "R02",
+    "R03",
+    "R04",
+    "R05",
+    "R06",
+    "R07",
+    "R08",
+    "R09",
+    "R10",
+    "R11",
+    "R12"
+  ],
+  "hbac_t2_n_le0": 2,
+  "md_t1_n_neg8": 15,
+  "md_t1_n_neg9": 24,
+  "note": "NO cleaned CSV written; rules inventory only",
+  "cleaned_dataset_written": false
+}
