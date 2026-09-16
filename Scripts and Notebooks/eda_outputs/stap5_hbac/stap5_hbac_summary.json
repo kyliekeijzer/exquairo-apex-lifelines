@@ -1,0 +1,155 @@
+{
+  "n_rows": 17960,
+  "target_primary": "HBAC_T1",
+  "target_unit": "%",
+  "hbac_t1": {
+    "n_valid": 17836,
+    "n_missing_or_le0": 124,
+    "mean": 5.552,
+    "sd": 0.4267,
+    "pct_gt_65": 0.0154,
+    "pct_gt_70": 0.0078
+  },
+  "hbac_t2": {
+    "n_valid": 17341,
+    "n_missing_or_le0": 619,
+    "mean": 5.4913,
+    "sd": 0.4338,
+    "pct_gt_65": 0.0212,
+    "pct_gt_70": 0.0103
+  },
+  "hbac_t3": {
+    "n_valid": 17122,
+    "n_missing_or_le0": 838,
+    "mean": 5.6428,
+    "sd": 0.5141,
+    "pct_gt_65": 0.0384,
+    "pct_gt_70": 0.0221
+  },
+  "top5_pearson_vs_HBAC_T1": [
+    {
+      "feature": "GLU_T1",
+      "pearson_r": 0.6283,
+      "n": 17788
+    },
+    {
+      "feature": "AGE_T1",
+      "pearson_r": 0.2981,
+      "n": 17836
+    },
+    {
+      "feature": "WAIST_T1",
+      "pearson_r": 0.2187,
+      "n": 17836
+    },
+    {
+      "feature": "BMI_T1",
+      "pearson_r": 0.2054,
+      "n": 17836
+    },
+    {
+      "feature": "WEIGHT_T1",
+      "pearson_r": 0.1376,
+      "n": 17836
+    }
+  ],
+  "top5_binary_delta_vs_HBAC_T1": [
+    {
+      "feature": "HTN_MED_T1",
+      "mean_hbac_a": 5.5242,
+      "mean_hbac_b": 5.767,
+      "delta_b_minus_a": 0.2429,
+      "n_total": 17783,
+      "note": ""
+    },
+    {
+      "feature": "WORK_T1",
+      "mean_hbac_a": 5.6392,
+      "mean_hbac_b": 5.5261,
+      "delta_b_minus_a": -0.113,
+      "n_total": 15851,
+      "note": ""
+    },
+    {
+      "feature": "TYPE2_DIABETES_FAMILY_MOTHER",
+      "mean_hbac_a": 5.5495,
+      "mean_hbac_b": 5.635,
+      "delta_b_minus_a": 0.0855,
+      "n_total": 17836,
+      "note": "NaN\u21920 (in-memory assumption)"
+    },
+    {
+      "feature": "SPORTS_T1",
+      "mean_hbac_a": 5.5878,
+      "mean_hbac_b": 5.5268,
+      "delta_b_minus_a": -0.061,
+      "n_total": 16708,
+      "note": ""
+    },
+    {
+      "feature": "TYPE2_DIABETES_FAMILY_FATHER",
+      "mean_hbac_a": 5.5505,
+      "mean_hbac_b": 5.6074,
+      "delta_b_minus_a": 0.0569,
+      "n_total": 17836,
+      "note": "NaN\u21920 (in-memory assumption)"
+    }
+  ],
+  "high_corr_pairs_abs_ge_0_5": [
+    {
+      "a": "CHO_T1",
+      "b": "LDC_T1",
+      "r": 0.9212
+    },
+    {
+      "a": "BMI_T1",
+      "b": "WAIST_T1",
+      "r": 0.8147
+    },
+    {
+      "a": "SBP_T1",
+      "b": "DBP_T1",
+      "r": 0.6885
+    },
+    {
+      "a": "GLU_T1",
+      "b": "HBAC_T1",
+      "r": 0.6283
+    }
+  ],
+  "longitudinal": [
+    {
+      "cutoff": 7.0,
+      "n_high_t1": 140,
+      "n_high_t2": 179,
+      "n_high_t3": 379,
+      "path_high_high_high": 57,
+      "path_low_low_low": 16041,
+      "paths_ending_high_from_low_t1": 291
+    },
+    {
+      "cutoff": 6.5,
+      "n_high_t1": 275,
+      "n_high_t2": 367,
+      "n_high_t3": 658,
+      "path_high_high_high": 156,
+      "path_low_low_low": 15766,
+      "paths_ending_high_from_low_t1": 453
+    }
+  ],
+  "excluded_from_feature_analysis": [
+    "pregnancies/PREGNANCIES",
+    "SLEEP_QUALITY",
+    "UZ_T1",
+    "ALT_T1",
+    "BALB_T1",
+    "SUMOFALCOHOL",
+    "SUMOFKCAL",
+    "METABOLIC_DISORDER_*",
+    "HB1C_*"
+  ],
+  "family_nan_as_0": true,
+  "leakage_note": "Do NOT use HBAC_T2/T3, HB1C_*, METABOLIC_DISORDER_*, or other T3 features as predictors when modeling HBAC_T1. T1 features only for T1 target.",
+  "cleaned_dataset_written": false,
+  "masking": "HBAC <= 0 \u2192 NaN in-memory only; family diabetes NaN\u21920 for association only"
+}

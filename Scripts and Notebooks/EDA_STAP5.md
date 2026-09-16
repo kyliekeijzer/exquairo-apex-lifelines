@@ -1,5 +1,8 @@
 # EDA stap 5 — Bivariate / target (raw + in-memory masking)
 
+> **Superseded for modeling by [`EDA_STAP5_HBAC.md`](EDA_STAP5_HBAC.md) (target=`HBAC`).** This file keeps the earlier METABOLIC_DISORDER bivariate screen.
+
+
 Branch work for Tim / Team 1. Data: `data/raw/exquairo_ai_bootcamp_synth_dataset.csv` (`sep=';'`).
 
 **Scope:** associaties met metabolic disorder op **ruwe** data. Masking alleen in-memory:
