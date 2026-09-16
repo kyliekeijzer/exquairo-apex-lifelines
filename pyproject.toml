@@ -1,0 +1,13 @@
+[project]
+name = "exquairo-apex-lifelines"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=7.3.0",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.11.2",
+    "pandas>=3.0.5",
+    "scikit-learn>=1.9.1",
+]
