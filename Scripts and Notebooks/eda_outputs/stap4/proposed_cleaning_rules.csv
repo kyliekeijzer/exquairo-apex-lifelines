@@ -1,0 +1,13 @@
+rule_id,columns,rule,rationale,apply_when
+R01,"METABOLIC_DISORDER_T1, METABOLIC_DISORDER_T2",Recode −8 and −9 to missing (NaN); retain 0/1,Bootcamp composite coding; −8/−9 not valid binary outcomes (stap 1–2),colleague later — analysis masking only until master clean
+R02,METABOLIC_DISORDER_T3,For binary modeling map 2→0; keep 1=yes; leave NaN as missing,"Starter notebook / stap 2: T3 uses 1=yes, 2=no (≠ T1/T2 coding)",colleague later — in-memory for modeling only
+R03,"HBAC_T1, HBAC_T2, HBAC_T3",Values ≤0 → missing,HbA1c % cannot be ≤0; stap3 flagged HBAC_T2 n≤0=2,colleague later
+R04,"TYPE2_DIABETES_FAMILY_FATHER, TYPE2_DIABETES_FAMILY_MOTHER",Treat blank/NaN as unchecked/no (optional fill 0); confirmed 1=yes,"Bootcamp TXT: 1=yes, blank=no; ~97% NaN matches unchecked pattern",colleague later — confirm with Tim/bootcamp before fill
+R05,"ALT_T1, UZ_T1, BALB_T1",TEAM DECISION: keep with missing-indicator feature OR drop from model,~49% NaN each — high risk of bias if listwise-deleted or naively imputed,colleague + team decision before master
+R06,"HB1C_T1, TGL_T1, ALT_T1 (and similar labs)","Outliers: FLAG for review vs winsorize at p01/p99 — propose, do not apply yet","Stap3: extreme max vs p99 (HB1C max 155, TGL 12.56, ALT 451)",colleague later after clinical review
+R07,HB1C_T* vs HBAC_T*,Prefer one unit for modeling (HBAC=% or HB1C=mmol/mol); do not both blindly,"Same construct, different units; HB1C_T1 has ~21% NaN vs HBAC_T1 ~0.7%",feature shortlist (stap 6+)
+R08,PREGNANCIES,Interpret missing by GENDER (likely N/A for males); do not impute as 0 blindly,~44% NaN; sex-linked structural missingness,colleague later
+R09,"SLEEP_QUALITY, SUMOFKCAL, SUMOFALCOHOL, NSES (and other ≥30% NaN)",Document high missing; decide impute / missing-indicator / drop per use-case,Material missingness; stap1–3 flagged,colleague + team
+R10,FEATURE_T3 / *_T3 when predicting MD_T1 or MD_T2,Do NOT use T3 features (or MD_T3) as predictors of T1/T2 — leakage,Temporal leakage: T3 measured after T1/T2 outcomes,always for T1/T2 prediction pipelines
+R11,SUMOFKCAL,Review zeros (stap3: 2×0) — true zero vs sentinel before imputing,Implausible daily kcal=0 for most adults,colleague later
+R12,all analysis scripts,Until master clean exists: mask sentinels in-memory only; never overwrite data/raw,Team process — colleagues produce new master after inventory,now and until master CSV delivered

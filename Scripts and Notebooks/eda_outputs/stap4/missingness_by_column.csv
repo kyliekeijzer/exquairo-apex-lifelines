@@ -1,0 +1,101 @@
+column,n_nan,pct_nan,n_neg8,n_neg9,n_le0,proposed_rule
+TYPE2_DIABETES_FAMILY_FATHER,17487,97.37,0,0,,high-NaN ≈ unchecked/no (confirm); optional fill 0
+TYPE2_DIABETES_FAMILY_MOTHER,17409,96.93,0,0,,high-NaN ≈ unchecked/no (confirm); optional fill 0
+SLEEP_QUALITY,9430,52.51,0,0,,high missing; team decision keep/impute/drop
+ALT_T1,8888,49.49,0,0,0,team: keep+missing-indicator vs drop (~49% NaN)
+UZ_T1,8889,49.49,0,0,0,team: keep+missing-indicator vs drop (~49% NaN)
+BALB_T1,8866,49.37,0,0,0,team: keep+missing-indicator vs drop (~49% NaN)
+PREGNANCIES,7876,43.85,0,0,,likely sex-linked missing (males); mask/skip by GENDER
+SUMOFALCOHOL,6259,34.85,0,0,,high missing — document; colleague decides impute/drop
+SUMOFKCAL,6246,34.78,0,0,2,high missing — document; colleague decides impute/drop
+HB1C_T1,3853,21.45,0,0,0,flag extremes vs winsorize (do not apply yet)
+METABOLIC_DISORDER_T3,3368,18.75,0,0,,for binary modeling map 2→0 in-memory; keep 1=yes
+VOLUNTEER_T1,2931,16.32,0,0,,standard NaN; pairwise/complete-case later
+DIAG_FIBROMYALGIA_ACR,2771,15.43,0,0,,standard NaN; pairwise/complete-case later
+DIAG_CFS_CDC,2573,14.33,0,0,,standard NaN; pairwise/complete-case later
+DIAG_IBS_ROME3,2557,14.24,0,0,,standard NaN; pairwise/complete-case later
+CYCLE_COMMUTE_T1,2378,13.24,0,0,,standard NaN; pairwise/complete-case later
+LLDS,2087,11.62,0,0,,standard NaN; pairwise/complete-case later
+WORK_T1,2003,11.15,0,0,,standard NaN; pairwise/complete-case later
+LTE_SUM_T2,1941,10.81,0,0,,standard NaN; pairwise/complete-case later
+LDI_SUM_T2,1896,10.56,0,0,,standard NaN; pairwise/complete-case later
+NSES,1769,9.85,0,0,,standard NaN; pairwise/complete-case later
+EDUCATION_LOWER_T2,1639,9.13,0,0,,standard NaN; pairwise/complete-case later
+WORK_T2,1618,9.01,0,0,,standard NaN; pairwise/complete-case later
+LOW_QUALITY_OF_LIFE_T2,1602,8.92,0,0,,standard NaN; pairwise/complete-case later
+I_SUM_T1,1290,7.18,0,0,,standard NaN; pairwise/complete-case later
+ZIP_CODE,1286,7.16,0,0,,standard NaN; pairwise/complete-case later
+A_SUM_T1,1262,7.03,0,0,,standard NaN; pairwise/complete-case later
+C_SUM_T1,1261,7.02,0,0,,standard NaN; pairwise/complete-case later
+E_SUM_T1,1230,6.85,0,0,,standard NaN; pairwise/complete-case later
+SC_SUM_T1,1220,6.79,0,0,,standard NaN; pairwise/complete-case later
+SD_SUM_T1,1218,6.78,0,0,,standard NaN; pairwise/complete-case later
+V_SUM_T1,1189,6.62,0,0,,standard NaN; pairwise/complete-case later
+D_SUM_T1,1186,6.6,0,0,,standard NaN; pairwise/complete-case later
+SCOR_NO_VAL,1167,6.5,0,0,,standard NaN; pairwise/complete-case later
+MWK_NO_VAL,1167,6.5,0,0,,standard NaN; pairwise/complete-case later
+MWK_VAL,1168,6.5,0,0,,standard NaN; pairwise/complete-case later
+SCOR_VAL,1166,6.49,0,0,,standard NaN; pairwise/complete-case later
+SPORTS_T1,1164,6.48,0,0,,standard NaN; pairwise/complete-case later
+GLU_T3,1018,5.67,0,0,0,standard NaN; pairwise/complete-case later
+HBAC_T3,838,4.67,0,0,0,standard NaN; pairwise/complete-case later
+HB1C_T3,838,4.67,0,0,0,standard NaN; pairwise/complete-case later
+CHO_T3,804,4.48,0,0,0,standard NaN; pairwise/complete-case later
+LDC_T3,804,4.48,0,0,0,standard NaN; pairwise/complete-case later
+HDC_T3,804,4.48,0,0,0,standard NaN; pairwise/complete-case later
+TGL_T3,804,4.48,0,0,0,standard NaN; pairwise/complete-case later
+GLU_T2,662,3.69,0,0,0,standard NaN; pairwise/complete-case later
+HBAC_T2,617,3.44,0,0,2,≤0 → missing (implausible %)
+HB1C_T2,588,3.27,0,0,1,n≤0 present — review sentinel vs true zero
+LDC_T2,553,3.08,0,0,0,standard NaN; pairwise/complete-case later
+TGL_T2,553,3.08,0,0,0,standard NaN; pairwise/complete-case later
+CHO_T2,553,3.08,0,0,0,standard NaN; pairwise/complete-case later
+HDC_T2,553,3.08,0,0,0,standard NaN; pairwise/complete-case later
+BKR_T2,553,3.08,0,0,0,standard NaN; pairwise/complete-case later
+LDI_SUM_T1,449,2.5,0,0,,standard NaN; pairwise/complete-case later
+LTE_SUM_T1,388,2.16,0,0,,standard NaN; pairwise/complete-case later
+SMOKING,271,1.51,0,0,,standard NaN; pairwise/complete-case later
+HBAC_T1,124,0.69,0,0,0,standard NaN; pairwise/complete-case later
+GLU_T1,118,0.66,0,0,0,standard NaN; pairwise/complete-case later
+LDC_T1,63,0.35,0,0,0,standard NaN; pairwise/complete-case later
+HDC_T1,63,0.35,0,0,0,standard NaN; pairwise/complete-case later
+CHO_T1,63,0.35,0,0,0,standard NaN; pairwise/complete-case later
+TGL_T1,63,0.35,0,0,0,flag extremes vs winsorize (do not apply yet)
+BKR_T1,63,0.35,0,0,0,standard NaN; pairwise/complete-case later
+DBP_T2,57,0.32,0,0,0,standard NaN; pairwise/complete-case later
+HBF_T2,57,0.32,0,0,,standard NaN; pairwise/complete-case later
+SBP_T2,57,0.32,0,0,0,standard NaN; pairwise/complete-case later
+MAP_T2,57,0.32,0,0,,standard NaN; pairwise/complete-case later
+HTN_MED_T1,53,0.3,0,0,,standard NaN; pairwise/complete-case later
+EDUCATION_LOWER_T1,42,0.23,0,0,,standard NaN; pairwise/complete-case later
+RESPIRATORY_DISEASE_T1,41,0.23,0,0,,standard NaN; pairwise/complete-case later
+WAIST_T2,40,0.22,0,0,0,standard NaN; pairwise/complete-case later
+HEIGHT_T2,40,0.22,0,0,0,standard NaN; pairwise/complete-case later
+WEIGHT_T2,40,0.22,0,0,0,standard NaN; pairwise/complete-case later
+BMI_T2,40,0.22,0,0,0,standard NaN; pairwise/complete-case later
+HIP_T2,40,0.22,0,0,,standard NaN; pairwise/complete-case later
+MAP_T1,8,0.04,0,0,,standard NaN; pairwise/complete-case later
+HBF_T1,7,0.04,0,0,,standard NaN; pairwise/complete-case later
+DBP_T1,7,0.04,0,0,0,standard NaN; pairwise/complete-case later
+SBP_T1,7,0.04,0,0,0,standard NaN; pairwise/complete-case later
+METABOLIC_DISORDER_T2,4,0.02,21,24,,mask −8/−9→NaN for analysis; keep 0/1
+LOW_QUALITY_OF_LIFE_T1,4,0.02,0,0,,standard NaN; pairwise/complete-case later
+METABOLIC_DISORDER_T1,4,0.02,15,24,,mask −8/−9→NaN for analysis; keep 0/1
+HIP_T3,1,0.01,0,0,,standard NaN; pairwise/complete-case later
+WAIST_T3,1,0.01,0,0,0,standard NaN; pairwise/complete-case later
+FINANCE_T1,0,0.0,0,0,,no missing observed
+HEIGHT_T1,0,0.0,0,0,0,no missing observed
+WEIGHT_T1,0,0.0,0,0,0,no missing observed
+HIP_T1,0,0.0,0,0,,no missing observed
+BMI_T1,0,0.0,0,0,0,no missing observed
+WAIST_T1,0,0.0,0,0,0,no missing observed
+HEIGHT_T3,0,0.0,0,0,0,no missing observed
+WEIGHT_T3,0,0.0,0,0,0,no missing observed
+GENDER,0,0.0,0,0,,no missing observed
+AGE_T1,0,0.0,0,0,,no missing observed
+AGE_T2,0,0.0,0,0,,no missing observed
+AGE_T3,0,0.0,0,0,,no missing observed
+BURNOUT_T1,0,0.0,0,0,,no missing observed
+DEPRESSION_T1,0,0.0,0,0,,no missing observed
+OSTEOARTHRITIS,0,0.0,0,0,,no missing observed
+NSES_YEAR,0,0.0,0,0,,no missing observed

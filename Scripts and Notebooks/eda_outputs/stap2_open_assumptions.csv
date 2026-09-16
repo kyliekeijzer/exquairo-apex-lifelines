@@ -1,0 +1,12 @@
+variable,role,assumptions_open,pct_nan,n_neg8_neg9,sample
+HB1C_T1,HBA1C_MMOLMOL,Eenheid mmol/mol; zelfde construct als HBAC (niet beide als losse features zonder check),21.45,0,37.0 | 34.0 | 46.0 | 40.0 | 42.0 | 32.0 | 33.0 | 39.0 | 35.0 | 41.0 | 31.0 | 38.0
+HBAC_T1,HBA1C_PERCENT,Eenheid %; cutoff diabetes vaak ≥6.5%; treatment-target vaak >7.0,0.69,0,5.5 | 5.3 | 5.7 | 6.3 | 5.8 | 5.6 | 5.1 | 6.0 | 5.0 | 5.2 | 5.4 | 5.9
+HB1C_T2,HBA1C_MMOLMOL,Eenheid mmol/mol; zelfde construct als HBAC (niet beide als losse features zonder check) | 0-waarden gezien in eerdere EDA: behandel ≤0 als missing voor %,3.27,0,37.0 | 33.0 | 38.0 | 44.0 | 39.0 | 36.0 | 31.0 | 32.0 | 41.0 | 35.0 | 42.0 | 30.0
+HBAC_T2,HBA1C_PERCENT,Eenheid %; cutoff diabetes vaak ≥6.5%; treatment-target vaak >7.0 | 0-waarden gezien in eerdere EDA: behandel ≤0 als missing voor %,3.44,0,5.5 | 5.2 | 5.7 | 6.2 | 5.8 | 5.6 | 5.4 | 5.0 | 5.1 | 5.9 | 6.0 | 4.9
+HB1C_T3,HBA1C_MMOLMOL,Eenheid mmol/mol; zelfde construct als HBAC (niet beide als losse features zonder check),4.67,0,39.0 | 37.0 | 40.0 | 45.0 | 34.0 | 32.0 | 42.0 | 44.0 | 36.0 | 31.0 | 41.0 | 35.0
+HBAC_T3,HBA1C_PERCENT,Eenheid %; cutoff diabetes vaak ≥6.5%; treatment-target vaak >7.0,4.67,0,5.7 | 5.6 | 5.8 | 6.3 | 5.9 | 5.3 | 5.0 | 5.2 | 6.0 | 6.1 | 6.2 | 5.4
+METABOLIC_DISORDER_T1,TARGET_CANDIDATE,"AANNAME: 1=ja, 0=nee; -8/-9=missing (niet wiki-bevestigd; bootcamp-composiet)",0.02,39,0.0 | 1.0 | -9.0 | -8.0
+METABOLIC_DISORDER_T2,TARGET_CANDIDATE,"AANNAME: 1=ja, 0=nee; -8/-9=missing (niet wiki-bevestigd; bootcamp-composiet)",0.02,45,0.0 | 1.0 | -9.0 | -8.0
+METABOLIC_DISORDER_T3,TARGET_CANDIDATE,"AANNAME: 1=ja, 2=nee (zoals starter notebook 2→0); coding ≠ T1/T2",18.75,0,2.0 | 1.0
+TYPE2_DIABETES_FAMILY_FATHER,FEATURE,"Bootcamp TXT: 1=yes, blank=no — hoge NaN is waarschijnlijk ""nee""/niet aangevinkt",97.37,0,1.0
+TYPE2_DIABETES_FAMILY_MOTHER,FEATURE,"Bootcamp TXT: 1=yes, blank=no — hoge NaN is waarschijnlijk ""nee""/niet aangevinkt",96.93,0,1.0
