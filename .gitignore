@@ -1,5 +1,11 @@
 .venv/
 __pycache__/
 .ipynb_checkpoints/
-data/
 .idea
+
+# Ignore data contents, but track the shared synth CSV + README
+data/*
+!data/raw/
+data/raw/*
+!data/raw/exquairo_ai_bootcamp_synth_dataset.csv
+!data/raw/README.md
